@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173','https://roamify-client.vercel.app'],
     credentials: true
 }));
 app.use(express.json());
